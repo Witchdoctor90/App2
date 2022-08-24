@@ -1,48 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.MainPage">
+             x:Class="App2.MainPage"
+             NavigationPage.HasNavigationBar="false">
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-    <Grid >
 
-        <Image Source="@drawable/backGround"  HorizontalOptions="Center" VerticalOptions="Center" Scale="1.5">
-
-        </Image>
-
-        <Frame x:Name="BlackPanel" BackgroundColor="#000" Opacity=".8" CornerRadius="25" VerticalOptions="End" HeightRequest="300">
-            <Grid IsVisible="true" x:Name="gridOnOff">
-                <Label Grid.Row="0" Text="Do you want to speak german?" TextColor="White" FontSize="Large" FontAttributes="Bold"></Label>
-                <Label Grid.Row="1" x:Name="LabelDown" Text="BUY MY COURSE FOR ONLY $12" TextColor="White" FontSize="Medium"></Label>
-                <Grid Grid.Row="2">
-                    <Frame Grid.Row="0" IsVisible="false"></Frame>
-                    <Button Grid.Row="1" Text="Buy Coffe For Me" BackgroundColor="#504949"   CornerRadius="15" Clicked="Button_Clicked"></Button>
-                </Grid>                                
-            </Grid>            
-        </Frame>
-
-        <Frame x:Name="Subscribepanel" BackgroundColor="#000" Opacity="0" IsVisible="false" HeightRequest="300">
-            <Grid>
-                <Button BackgroundColor="White" HorizontalOptions="End" HeightRequest="10" WidthRequest="10"></Button>
-                <Label Grid.Row="0" Text="Get the full access to all levels" FontAttributes="Bold" TextColor="Gray" FontSize="40" HorizontalTextAlignment="Center"></Label>
-                <Frame Grid.Row="2" BackgroundColor="LightGray" VerticalOptions="Start" HeightRequest="70" CornerRadius="30">
-                    <Grid>
-                        <Label Grid.Row="0" Text="Explore lessons for A2-C1 levels!" TextColor="#000" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
-                        <Label Grid.Row="1" Text="You will be able to view locked lessons" HorizontalOptions="Center" FontSize="14"></Label>
-                    </Grid>
-                </Frame>
-
-                <Frame Grid.Row="3" BackgroundColor="LightGray" VerticalOptions="Start" HeightRequest="70" CornerRadius="30">
-                    <Grid>
-                        <Label Grid.Row="0" Text="Improve your german lang skills!" TextColor="#000" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"></Label>
-                        <Label Grid.Row="1" Text="You will talk like a pro german man bruh" HorizontalOptions="Center" FontSize="14"></Label>
-                    </Grid>
-                </Frame>
-                <Label Grid.Row="5" Text="Subscribe now for only $99 per second" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Center" />
-                <Button Grid.Row="5" Text="Subscribe now for only $1200" TextColor="White" BackgroundColor="#3F51B5" CornerRadius="15" VerticalOptions="End"></Button>
-            </Grid>
-        </Frame>
-
-    </Grid>
-    
-
+            <Button Grid.Row="0" Grid.Column="0" Text="1" Clicked="Button_Clicked"></Button>
+            <Button Grid.Row="0" Grid.Column="1" Text="2"></Button>
+            <Button Grid.Row="0" Grid.Column="2" Text="3"></Button>
+            <Button Grid.Row="0" Grid.Column="3" Text="4"></Button>
+            <Button Grid.Row="0" Grid.Column="4" Text="5"></Button>
+            <Button Grid.Row="1" Grid.Column="0" Text="6"></Button>
+            <Button Grid.Row="1" Grid.Column="1" Text="7"></Button>
+            <Button Grid.Row="1" Grid.Column="2" Text="8"></Button>
+            <Button Grid.Row="1" Grid.Column="3" Text="9"></Button>
+            <Button Grid.Row="1" Grid.Column="4" Text="10"></Button>
+            
+        </Grid>
+    </ScrollView>
 </ContentPage>
